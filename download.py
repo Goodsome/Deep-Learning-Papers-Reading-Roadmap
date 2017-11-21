@@ -3,7 +3,7 @@ import os
 import re
 from six.moves.urllib.request import urlopen
 from six.moves.urllib.error import HTTPError
-import urllib2
+import urllib
 import shutil
 import argparse
 import mistune
@@ -15,8 +15,8 @@ import requests
 # encoding=utf8  
 import sys  
 
-reload(sys)  
-sys.setdefaultencoding('utf8')
+# reload(sys)  
+# sys.setdefaultencoding('utf8')
 
 def download_pdf(link, location, name):
     try:
